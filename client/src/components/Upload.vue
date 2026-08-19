@@ -206,8 +206,6 @@
 
   <script>
   import API from '../api';
-  import Analysis from "@/components/Analysis";
-  import HGtest from "@/components/HGtest"
   import { Plotly, full } from 'vue-plotly';
   import { saveAs } from 'file-saver';
   import _ from 'lodash';
@@ -254,7 +252,7 @@
 
   export default {
     components: {
-        Analysis, HGtest, Plotly, BModal
+        Plotly, BModal
     },
     data() {
       return {

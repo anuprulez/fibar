@@ -69,11 +69,9 @@ RUN npm install
 RUN npm run build 
 
 ENV PATH="/opt/:$PATH"
-ENV PYTHONPATH="/opt/:$PYTHONPATH"
-ENV PYTHONPATH="/opt/scripts:$PYTHONPATH"
+ENV PYTHONPATH="/opt:/opt/scripts"
 
 WORKDIR /opt
 
 EXPOSE 80/tcp
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisord.conf"]
-
