@@ -45,7 +45,7 @@ highlighted in black and the horizontal bar is white on a transparent background
 aligned below the value and unit (nm or um).
 
 
-## How to build Docker
+## How to build and run Docker
 
 `docker build -t fibar_server:latest .`
 `docker run --name fibar_server -p 8080:80 fibar_server:latest`
